@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  background: url("../res/media/img/logo_greyscale.png") no-repeat center top;
+  background-size: 350px;
+  background-position: 50% 10%;
+  background-attachment: fixed;
+  background-color: #010101;
+  opacity: 1;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  transform: translate(0%, -50%);
+}
+.centered h1 {
+  font-size: 56px;
+  -ms-text-justify: justify;
+  text-align: justify;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+}
+.centered #countdown {
+  width: 85%;
+  margin: auto;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3, h4, h5, h6 {
+  font-family: "Neue Einstellung", sans-serif;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
