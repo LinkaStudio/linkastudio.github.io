@@ -19,10 +19,9 @@ body {
 }
 
 .centered {
-  position: fixed;
-  top: 50%;
-  left: 10%;
-  transform: translate(0%, -50%);
+  width: 90%;
+  margin: 25% auto 0 auto;
+  text-align: center;
 }
 .centered h1 {
   font-size: 56px;
