@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <!-- Metas -->
+        <meta name="description" content="Arthrodesis is a point 'n click horror game."> <!--TODO: add an elevator speech!-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="index, follow">
+
+        <!-- Links -->
+        <link rel="stylesheet" href="/css/arthrodesis/arthrodesis.css">
+        <link rel="stylesheet" href="/css/arthrodesis/media_queries.css">
+        <link rel="icon" type="image/x-icon" href="/res/arthrodesis/media/img/icon/arthrodesis32.ico">
+        <link http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="alternate" hreflang="fr" href="http://linka-studio.com/fr/games/arthrodesis/" />
+
+        <!-- Javascript -->
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+        <!-- Misc -->
+        <title>Arthrodesis</title>
+
+    </head>
+    <body>
+        <button legal-age-btn>Legal age</button>
+        <dialog legal-age-modal class="modal">
+            <div class="modal-content-wrapper">
+                <img src="/res/arthrodesis/media/img/logo/logo.png" alt="Arthrodesis logo" id="legal-age-modal-logo"/>
+                <p>Arthrodesis is not a game suited for all audience. You must be 18 years old or older
+                    to play this game. Please confirm you have the legal age to enter this website.<br/>
+                    Also, this game addresses topics such as :
+                    <ul>
+                        <li>Suicide</li>
+                        <li>Depression</li>
+                        <li>Nudity</li>
+                        <li>Sex</li>
+                        <li>Rape</li>
+                        <li>Drug and alchohol abuse</li>
+                        <li>Murder</li>
+                        <li>Medical discomfort</li>
+                    </ul>
+                    If you are not ok with one of these subjects, please, leave this website and do not play
+                    the game.
+                    <br/>
+                    <br/>
+                    Thank you.
+                </p>
+            </div>
+            <div class="modal-btn-wrapper">
+                <button modal-yes-btn>Yes</button>
+                <button modal-no-btn>No</button>
+            </div>
+        </dialog>
+        <header>
+
+        </header>
+        <main>
+            <section>
+
+            </section> 
+        </main>
+        <footer>
+            <a href="/fr/games/arthrodesis/">Français</a>
+            <p>© 2023 Linka</p>
+        </footer>
+        <script>
+            const legalAgeBtn = document.querySelector("[legal-age-btn]")
+            const modalDenyBtn = document.querySelector("[modal-no-btn]");
+            const modalAgreeBtn = document.querySelector("[modal-yes-btn]");
+            const ageWarningModal = document.querySelector("[legal-age-modal]");
+
+            legalAgeBtn.addEventListener("click", () => {
+                ageWarningModal.showModal();
+            });
+            modalDenyBtn.addEventListener("click", () => {
+                window.location.href = "https://linka-studio.com";
+            });
+
+            modalAgreeBtn.addEventListener("click", () => {
+                ageWarningModal.close();
+            });
+
+        </script>
+    </body>
+</html>

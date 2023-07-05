@@ -1,0 +1,55 @@
+//Import the variables
+@import "_arthrodesis";
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+    background-color: $dark-blue_bgcolor;
+}
+
+.modal{
+    width: 80%;
+    padding: 32px 64px;
+    background-color: $dark-blue_bgcolor;
+    color: white;
+    border: 1px solid red;
+    &::backdrop{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .modal-content-wrapper {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    
+        #legal-age-modal-logo{
+            width: 70%;
+            margin: -32px auto;
+        
+        }
+    }
+
+    .modal-btn-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 16px auto;
+        width: 100%;
+
+        button{
+            background-color: red;
+            color: white;
+            border: 1px solid white;
+            padding: 8px 16px;
+            margin: 16px;
+            display: inline-block;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+    }
+
+  }
