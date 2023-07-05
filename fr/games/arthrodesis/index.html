@@ -18,6 +18,10 @@
         <link rel="icon" type="image/x-icon" href="/res/arthrodesis/media/img/icon/arthrodesis32.ico">
         <link http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="alternate" hreflang="eng" href="http://linka-studio.com/games/arthrodesis" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap" rel="stylesheet">
+
 
         <!-- Javascript -->
 
@@ -26,10 +30,82 @@
 
     </head>
     <body>
-        
+        <dialog legal-age-modal class="modal">
+            <div class="modal-content-wrapper">
+                <img src="/res/arthrodesis/media/img/logo/logo.png" alt="Logo Arthrodesis" id="legal-age-modal-logo"/>
+                <p>
+                    Arthrodesis n'est pas un jeu destiné à tous les publics. Pour y jouer, vous devez être âgé(e) de 18 ans ou plus. 
+                    Veuillez confirmer que vous avez l'âge requis pour accéder à ce site.<br/>
+                    De surcroît, ce jeu traite de sujets sensibles tels que :
+                    <ul>
+                        <li>Le suicide</li>
+                        <li>La dépression</li>
+                        <li>La nudité</li>
+                        <li>Le sexe</li>
+                        <li>Le viol</li>
+                        <li>L'abus d'alcool et de drogues</li>
+                        <li>Le meurtre</li>
+                        <li>Les environnements médicaux</li>
+                        <li>La violence</li>
+                        <li>La torture</li>
+                    </ul>
+                    Si l'un de ces thèmes vous met mal à l'aise, nous vous conseillons vivement de quitter ce site et de ne pas jouer à ce jeu.
+                    <br/>
+                    <br/>
+                    Merci de votre compréhension.
+                </p>                
+            </div>
+            <div class="modal-btn-wrapper">
+                <button modal-yes-btn>Oui</button>
+                <button modal-no-btn>Non</button>
+            </div>
+        </dialog>
+        <header>
+            <nav>
+                <a href="index.html" title="Accueil">ACCUEIL</a>
+                <a href="about.html" title="A propos">A PROPOS</a>
+                <a href="buy.html" title="Acheter">ACHETER ARTHRODESIS</a>
+                <a href="galery.html" title="Galerie">GALERIE</a>
+                <a href="trailer.html" title="Trailer">TRAILER</a>
+                <a href="contact.html" title="Contactez-nous">CONTACTEZ-NOUS</a>
+            </nav>
+            <div id="header-wrapper">
+                <div id="header-img-wrapper">
+                    <img src="/res/arthrodesis/media/img/logo/animated.gif" alt="Logo animé Arthrodesis" id="header-logo"/>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+
+            </section> 
+        </main>
+        <footer>
+            <a href="/games/arthrodesis/">English</a>
+            <button legal-age-btn>Notice légale</button>
+            <p>© 2023 Linka</p>
+        </footer>
+        <script>
+            
+            const legalAgeBtn = document.querySelector("[legal-age-btn]")
+            const modalDenyBtn = document.querySelector("[modal-no-btn]");
+            const modalAgreeBtn = document.querySelector("[modal-yes-btn]");
+            const ageWarningModal = document.querySelector("[legal-age-modal]");
+
+            legalAgeBtn.addEventListener("click", () => {
+                ageWarningModal.showModal();
+            });
+            modalDenyBtn.addEventListener("click", () => {
+                window.location.href = "https://linka-studio.com/fr/";
+            });
+
+            modalAgreeBtn.addEventListener("click", () => {
+                ageWarningModal.close();
+            });
+
+            window.onload = function() {
+                ageWarningModal.showModal();
+            };
+        </script>
     </body>
-    <footer>
-        <a href="/games/arthrodesis">English</a>
-        <p>© 2023 Linka</p>
-    </footer>
 </html>

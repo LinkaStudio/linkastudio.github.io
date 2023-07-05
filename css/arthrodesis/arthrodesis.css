@@ -6,6 +6,50 @@ body {
   background-color: #141b54;
 }
 
+header {
+  width: 100%;
+  margin: auto;
+}
+header nav {
+  width: 60%;
+  margin: 16px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  font-family: "Belanosima", sans-serif;
+}
+header nav a:hover {
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+header nav a:active {
+  text-decoration: underline;
+  transform: translateY(2px);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+header #header-wrapper {
+  width: 100%;
+  margin: auto;
+}
+header #header-wrapper #header-img-wrapper {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #header-wrapper #header-img-wrapper #header-logo {
+  width: 80%;
+  margin: auto;
+}
+
 .modal {
   width: 80%;
   padding: 32px 64px;
