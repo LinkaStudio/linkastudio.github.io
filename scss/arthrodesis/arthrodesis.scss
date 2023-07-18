@@ -6,8 +6,9 @@
 }
 
 body{
-    background-color: $dark-blue_bgcolor;
+    background-color: black;
     color: white;
+    margin:0;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -17,7 +18,14 @@ h1, h2, h3, h4, h5, h6{
 
 header{
     width: 100%;
-    margin: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 16px;
+
+    background-image: url("/res/arthrodesis/media/img/background_finalv1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     nav{
         width: 60%;
@@ -53,6 +61,7 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             #header-logo{
                 width: 80%;
                 margin: auto;

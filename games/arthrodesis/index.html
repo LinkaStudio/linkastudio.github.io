@@ -24,6 +24,15 @@
 
         <!-- Javascript -->
         <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-07DZT0TDRY"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-07DZT0TDRY');
+        </script>
+
 
         <!-- Misc -->
         <title>Arthrodesis</title>
@@ -73,15 +82,13 @@
             <div id="header-wrapper">
                 <div id="header-img-wrapper">
                     <img src="/res/arthrodesis/media/img/logo/animated.gif" alt="Arthrodesis logo animated" id="header-logo"/>
+                    <h1>Will yo survive this week?</h1>
+                    <h2>Available soon</h2>
                 </div>
             </div>
         </header>
         <main>
-            <section>
-                <h1>Will yo survive this week?</h1>
-                <h2>Available soon</h2>
-            </section> 
-            <hr/>
+            
             <section>
                 <h2>TODO: Find an elevator speech titie</h2>
                 <p>TODO: Find an elevator speech</p>
@@ -100,9 +107,12 @@
             <hr/>
         </main>
         <footer>
-            <a href="/fr/games/arthrodesis/">Français</a>
-            <button legal-age-btn>Legal notice</button>
-            <p>© 2023 Linka</p>
+            <small>
+                <a href="/fr/games/arthrodesis/" title="Version française">Français</a>
+                <a href="/privacy_policy.html" title="Privacy Policy">Privacy Policy</a>
+                <button legal-age-btn>Legal notice</button>
+                <p>© 2023 Linka</p>
+            </small>
         </footer>
         <script>
             const legalAgeBtn = document.querySelector("[legal-age-btn]")
