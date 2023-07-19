@@ -16,6 +16,13 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 400;
 }
 
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 header{
     width: 100%;
     height: 100vh;
@@ -114,3 +121,32 @@ header{
     }
 
   }
+
+#trailer-wrap{
+    position: relative;
+    width: 70%;
+    padding-bottom: 56.25%; /* 100/16*9 = 56.25 */
+    border: 1px solid red;
+
+  #trailer-canva{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    // background-image: url('votre-image.jpg'); /* Remplacez par votre image */
+    background-size: cover;
+    background-position: center;
+
+    #trailer-video-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+  }
+}
