@@ -4,98 +4,101 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <!-- Metas -->
-        <meta name="description" content="T3-L4 is a point 'n click horror game."> <!--TODO: add an elevator speech!-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="robots" content="index, follow">
 
-        <!-- Links -->
-        <link rel="stylesheet" href="/css/T3-L4/T3-L4.css">
-        <link rel="stylesheet" href="/css/T3-L4/media_queries.css">
-        <link rel="icon" type="image/x-icon" href="/res/T3-L4/media/img/icon/T3-L432.ico">
-        <link http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="alternate" hreflang="fr" href="http://linka-studio.com/fr/games/T3-L4/" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap" rel="stylesheet">
+<head>
+    <!-- Metas -->
+    <meta name="description" content="T3-L4 is a point 'n click horror game."> <!--TODO: add an elevator speech!-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
 
-        <!-- Javascript -->
-        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-07DZT0TDRY"></script>
-        <script>
+    <!-- Links -->
+    <link rel="stylesheet" href="/css/T3-L4/T3-L4.css">
+    <link rel="stylesheet" href="/css/T3-L4/media_queries.css">
+    <link rel="icon" type="image/x-icon" href="/res/T3-L4/media/img/icon/T3-L432.ico">
+    <link http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="alternate" hreflang="fr" href="http://linka-studio.com/fr/games/T3-L4/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-07DZT0TDRY"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-07DZT0TDRY');
-        </script>
+    </script>
 
 
-        <!-- Misc -->
-        <title>T3-L4</title>
+    <!-- Misc -->
+    <title>T3-L4</title>
 
-    </head>
-    <body>
-        <dialog legal-age-modal class="modal">
-            <div class="modal-content-wrapper">
-                <img src="/res/T3-L4/media/img/logo/logo.png" alt="T3-L4 logo" id="legal-age-modal-logo"/>
-                <p>
-                    T3-L4 is not a game intended for all audiences. To play, you must be 18 years of age or older.
-                    Please confirm that you are of the required age to access this site.<br/>
-                    Furthermore, this game deals with sensitive subjects such as:
-                    <ul>
-                        <li>Suicide</li>
-                        <li>Depression</li>
-                        <li>Nudity</li>
-                        <li>Sex</li>
-                        <li>Rape</li>
-                        <li>Alcohol and drug abuse</li>
-                        <li>Murder</li>
-                        <li>Medical settings</li>
-                        <li>Violence</li>
-                        <li>Torture</li>
-                    </ul>
-                    If any of these themes make you uncomfortable, we strongly recommend that you leave this site and refrain from playing this game.
-                    <br/>
-                    <br/>
-                    Thank you for your understanding.
-                </p>
-                
+</head>
+
+<body>
+    <dialog legal-age-modal class="modal">
+        <div class="modal-content-wrapper">
+            <img src="/res/T3-L4/media/img/logo/logo.png" alt="T3-L4 logo" id="legal-age-modal-logo" />
+            <p>
+                T3-L4 is not a game intended for all audiences. To play, you must be 18 years of age or older.
+                Please confirm that you are of the required age to access this site.<br />
+                Furthermore, this game deals with sensitive subjects such as:
+            <ul>
+                <li>Suicide</li>
+                <li>Depression</li>
+                <li>Nudity</li>
+                <li>Sex</li>
+                <li>Rape</li>
+                <li>Alcohol and drug abuse</li>
+                <li>Murder</li>
+                <li>Medical settings</li>
+                <li>Violence</li>
+                <li>Torture</li>
+            </ul>
+            If any of these themes make you uncomfortable, we strongly recommend that you leave this site and refrain
+            from playing this game.
+            <br />
+            <br />
+            Thank you for your understanding.
+            </p>
+
+        </div>
+        <div class="modal-btn-wrapper">
+            <button modal-yes-btn>Yes</button>
+            <button modal-no-btn>No</button>
+        </div>
+    </dialog>
+    <header>
+        <nav>
+            <a href="index.html" title="Home">HOME</a>
+            <a href="#about-wrap" title="Home">ABOUT</a>
+            <!-- <a href="#buy-game-wrap" title="Home">BUY T3-L4</a> -->
+            <!-- <a href="galery.html" title="Galery">GALLERY</a> -->
+            <a href="#trailer-wrap" title="Trailer">TRAILER</a>
+            <!--<a href="contact.html" title="Contact us">CONTACT US</a> -->
+        </nav>
+        <div id="header-wrapper">
+            <div id="header-img-wrapper">
+                <img src="/res/T3-L4/media/img/logo/animated.gif" alt="T3-L4 logo animated" id="header-logo" />
+                <h1>Will yo survive this week?</h1>
+                <h2>Available soon</h2>
             </div>
-            <div class="modal-btn-wrapper">
-                <button modal-yes-btn>Yes</button>
-                <button modal-no-btn>No</button>
-            </div>
-        </dialog>
-        <header>
-            <nav>
-                <a href="index.html" title="Home">HOME</a>
-                <a href="about.html" title="About">ABOUT</a>
-                <a href="buy.html" title="Buy">BUY T3-L4</a>
-                <a href="galery.html" title="Galery">GALLERY</a>
-                <a href="trailer.html" title="Trailer">TRAILER</a>
-                <a href="contact.html" title="Contact us">CONTACT US</a>
-            </nav>
-            <div id="header-wrapper">
-                <div id="header-img-wrapper">
-                    <img src="/res/T3-L4/media/img/logo/animated.gif" alt="T3-L4 logo animated" id="header-logo"/>
-                    <h1>Will yo survive this week?</h1>
-                    <h2>Available soon</h2>
-                </div>
-            </div>
-        </header>
-        <main class="centered">
-            <!--About section-->
-            <section id="about-wrap">
-                <article id="elevator-speech">
-                    <h2>TODO: Find an elevator speech titie</h2>
-                    <p>TODO: Find an elevator speech</p>
-                </article>
-            </section> 
-            <!-- <hr/>
+        </div>
+    </header>
+    <main class="centered">
+        <!--About section-->
+        <section id="about-wrap">
+            <article id="elevator-speech">
+               
+                <h2>Defy the dark veil of reality and dreams in a battle against pain and sleep. Navigate the mysteries of a hospital where every night could be your last. Will you remain in hell, or will you escape?</h2>
+            </article>
+        </section>
+        <!-- <hr/>
             <section id="buy-game-wrap">
                 <div id="carousel-wrap">
                     <div id="carousel-nav">
@@ -105,64 +108,76 @@
                     </div>
                 </div>
             </section> -->
-            <hr/>
-            <!--Trailer section-->
-            <section id="trailer-wrap">
-                <h2>Trailer</h2>
-                <div id="trailer-canva">
-                    <div id="trailer-content">
-
-                    </div>
+        <hr />
+        <!--Trailer section-->
+        <section id="trailer-wrap">
+            <h2>Trailer</h2>
+            <div id="trailer-canva">
+                <div id="trailer-content">
+                    <h2>Trailer #1 coming soon</h2>
                 </div>
-            </section>
-            <hr/>
-        </main>
-        <footer>
+            </div>
+        </section>
+        <hr />
+    </main>
+    <footer>
+        <div class="sn"></div>
+        <div class="language">
+            <a href="/fr/games/T3-L4/" title="Version française">Français</a>
+        </div>
+        <div class="legal-notice">
             <small>
-                    <div class="sn"></div>
-                    <div class="language">
-                        <a href="/fr/games/T3-L4/" title="Version française">Français</a>
-                    </div>
-                    <div class="legal-notice">
-                        <button legal-age-btn>Legal notice</button>
-                        <a href="/privacy_policy.html" title="Privacy Policy">Privacy Policy</a>
-                        <p>© 2023 Linka</p>
-                    </div>
-                    <div class="site-map">
-                        <ul>
-                            <li><a href="/games/T3-L4/" title="Home">Home</a></li>
-                            <li><a href="#about-wrap" title="Home">About</a></li>
-                            <li><a href="#buy-game-wrap" title="Home">Buy T3-L4</a></li>
-                            <li><a href="/games/T3-L4/gallery.html" title="Home">Galery</a></li>
-                            <li><a href="/games/T3-L4/trailer.html" title="Home">Trailer</a></li>
-                            <li><a href="/games/T3-L4/contact.html" title="Home">Contact-us</a></li>
-                        </ul>
-                    </div>
-                    <div class="contact">
-                        
-                    </div>
+                <button legal-age-btn>Legal notice</button>
+                <a href="/privacy_policy.html" title="Privacy Policy">Privacy Policy</a>
+                <p>© 2023 Linka</p>
             </small>
-        </footer>
-        <script>
-            const legalAgeBtn = document.querySelector("[legal-age-btn]")
-            const modalDenyBtn = document.querySelector("[modal-no-btn]");
-            const modalAgreeBtn = document.querySelector("[modal-yes-btn]");
-            const ageWarningModal = document.querySelector("[legal-age-modal]");
+        </div>
+        <div class="site-map">
+            <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="#about-wrap" title="Home">About</a></li>
+                <!-- <li><a href="#buy-game-wrap" title="Home">Buy T3-L4</a></li> -->
+                <li><a href="gallery.html" title="Home">Galery</a></li>
+                <li><a href="#trailer-wrap" title="Home">Trailer</a></li>
+                <!-- <li><a href="contact.html" title="Home">Contact-us</a></li> -->
+            </ul>
+        </div>
+        <div class="contact">
+            <form action="mailto:contact@linka-studio.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
 
-            legalAgeBtn.addEventListener("click", () => {
-                ageWarningModal.showModal();
-            });
-            modalDenyBtn.addEventListener("click", () => {
-                //window.location.href = "https://linka-studio.com";
-                window.location.href = "about:blank";
-            });
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
 
-            modalAgreeBtn.addEventListener("click", () => {
-                ageWarningModal.close();
-            });
-            window.onload = function() {
-                ageWarningModal.showModal();
-            };
-        </script>
-    </body>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="msg"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </footer>
+    <script>
+        const legalAgeBtn = document.querySelector("[legal-age-btn]")
+        const modalDenyBtn = document.querySelector("[modal-no-btn]");
+        const modalAgreeBtn = document.querySelector("[modal-yes-btn]");
+        const ageWarningModal = document.querySelector("[legal-age-modal]");
+
+        legalAgeBtn.addEventListener("click", () => {
+            ageWarningModal.showModal();
+        });
+        modalDenyBtn.addEventListener("click", () => {
+            //window.location.href = "https://linka-studio.com";
+            window.location.href = "about:blank";
+        });
+
+        modalAgreeBtn.addEventListener("click", () => {
+            ageWarningModal.close();
+        });
+        window.onload = function () {
+            ageWarningModal.showModal();
+        };
+    </script>
+</body>
+
 </html>
