@@ -1,0 +1,52 @@
+//Import the variables
+@import "_T3-L4";
+
+header{
+    height: 75vh;
+    background-position: bottom;
+    margin-bottom: 8px;
+}
+
+main{
+    display: block;
+    width: 100%;
+    margin: 8px auto;
+    section{
+        background-color: $eigengrau;
+        width: 70%;
+        margin: 16px auto;
+        padding: 8px 16px;
+        border-radius: 8px;
+    }
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        resize: vertical;
+    }
+
+    button {
+        border: none;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #333;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 1em;
+        &:hover {
+            background-color: #777;
+        }
+    }
+}

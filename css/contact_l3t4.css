@@ -1,0 +1,45 @@
+header {
+  height: 75vh;
+  background-position: bottom;
+  margin-bottom: 8px;
+}
+
+main {
+  display: block;
+  width: 100%;
+  margin: 8px auto;
+}
+main section {
+  background-color: #16161d;
+  width: 70%;
+  margin: 16px auto;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-bottom: 5px;
+}
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+form button {
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1em;
+}
+form button:hover {
+  background-color: #777;
+}

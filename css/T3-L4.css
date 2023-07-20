@@ -17,10 +17,19 @@ h5,
 h6 {
   font-family: "Belanosima", sans-serif;
   font-weight: 400;
+  margin: 16px 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.7em;
 }
 
 hr {
-  width: 70%;
+  width: 35%;
   color: #16161D;
   border: 1px solid #16161D;
   background-color: #16161D;
@@ -84,36 +93,36 @@ header #header-wrapper #header-img-wrapper #header-logo {
   margin: auto;
 }
 
-.modal {
+dialog {
   width: 80%;
   padding: 32px 64px;
   background-color: #141b54;
   color: white;
   border: 1px solid red;
 }
-.modal::backdrop {
+dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.7);
 }
-.modal .modal-content-wrapper {
+dialog .modal-content-wrapper {
   display: flex;
   align-items: flex-start;
   width: 100%;
   flex-direction: column;
   flex-wrap: nowrap;
 }
-.modal .modal-content-wrapper #legal-age-modal-logo {
+dialog .modal-content-wrapper #legal-age-modal-logo {
   max-width: 70%;
   max-height: auto;
   margin: 16px auto;
 }
-.modal .modal-btn-wrapper {
+dialog .modal-btn-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 16px auto;
   width: 100%;
 }
-.modal .modal-btn-wrapper button {
+dialog .modal-btn-wrapper button {
   background-color: red;
   color: white;
   border: 1px solid white;
@@ -128,6 +137,12 @@ header #header-wrapper #header-img-wrapper #header-logo {
   width: 70%;
   margin: auto;
   text-align: center;
+}
+
+#trailer-ifram {
+  width: 50%;
+  border: none;
+  margin: 16px auto;
 }
 
 #trailer-wrap {
@@ -165,6 +180,26 @@ header #header-wrapper #header-img-wrapper #header-logo {
   height: 100%;
 }
 
+.sn-grid {
+  grid-area: sn;
+  padding: 8px;
+  margin: 8px;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.sn-grid a {
+  max-width: 64px;
+  max-height: auto;
+  padding: 8px;
+  margin: 8px;
+}
+.sn-grid a img {
+  max-width: 64px;
+  max-height: auto;
+}
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -176,6 +211,7 @@ footer {
   background-color: black;
   color: #f5f5f5;
   align-items: end;
+  border-top: 1px solid white;
 }
 footer a {
   border: none;

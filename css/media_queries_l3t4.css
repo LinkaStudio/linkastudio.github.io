@@ -1,4 +1,7 @@
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 850px) {
+  nav {
+    width: 100% !important;
+  }
   footer .sn {
     justify-content: space-around;
     align-items: baseline;
