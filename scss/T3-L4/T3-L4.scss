@@ -114,8 +114,9 @@ header {
         flex-wrap: nowrap;
 
         #legal-age-modal-logo {
-            width: 70%;
-            margin: -32px auto;
+            max-width: 70%;
+            max-height: auto;
+            margin: 16px auto;
 
         }
     }
@@ -219,6 +220,8 @@ footer {
         margin: 8px;
         border-bottom: 1px solid white;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         a{
             max-width: 64px;
             max-height: auto;
@@ -234,16 +237,17 @@ footer {
     
 
     .legal-notice {
+        
         grid-area: legal-notice;
         
         padding: 8px;
         margin-left: 8px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: stretch;
-        justify-content: center;
-        align-items: flex-end;
+        small{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
         
         
     }

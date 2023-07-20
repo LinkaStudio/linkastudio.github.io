@@ -102,8 +102,9 @@ header #header-wrapper #header-img-wrapper #header-logo {
   flex-wrap: nowrap;
 }
 .modal .modal-content-wrapper #legal-age-modal-logo {
-  width: 70%;
-  margin: -32px auto;
+  max-width: 70%;
+  max-height: auto;
+  margin: 16px auto;
 }
 .modal .modal-btn-wrapper {
   display: flex;
@@ -187,6 +188,8 @@ footer .sn {
   margin: 8px;
   border-bottom: 1px solid white;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   /* Ajoutez vos styles ici */
 }
 footer .sn a {
@@ -203,12 +206,12 @@ footer .legal-notice {
   grid-area: legal-notice;
   padding: 8px;
   margin-left: 8px;
+}
+footer .legal-notice small {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
-  align-content: stretch;
-  justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 footer .site-map {
   grid-area: site-map;
