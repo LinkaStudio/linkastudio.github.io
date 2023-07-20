@@ -6,6 +6,7 @@ body {
   background-color: black;
   color: white;
   margin: 0;
+  font-family: "Open-Sans", sans-serif;
 }
 
 h1,
@@ -101,8 +102,9 @@ header #header-wrapper #header-img-wrapper #header-logo {
   flex-wrap: nowrap;
 }
 .modal .modal-content-wrapper #legal-age-modal-logo {
-  width: 70%;
-  margin: -32px auto;
+  max-width: 70%;
+  max-height: auto;
+  margin: 16px auto;
 }
 .modal .modal-btn-wrapper {
   display: flex;
@@ -182,13 +184,39 @@ footer a {
 }
 footer .sn {
   grid-area: sn;
+  padding: 8px;
+  margin: 8px;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   /* Ajoutez vos styles ici */
+}
+footer .sn a {
+  max-width: 64px;
+  max-height: auto;
+  padding: 8px;
+  margin: 8px;
+}
+footer .sn a img {
+  max-width: 64px;
+  max-height: auto;
 }
 footer .legal-notice {
   grid-area: legal-notice;
+  padding: 8px;
+  margin-left: 8px;
+}
+footer .legal-notice small {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 footer .site-map {
   grid-area: site-map;
+  border-right: 1px solid white;
+  padding: 8px;
 }
 footer .site-map ul {
   list-style: none;
@@ -199,6 +227,9 @@ footer .site-map ul li {
 }
 footer .contact {
   grid-area: contact;
+  border-left: 1px solid white;
+  padding: 8px;
+  margin-left: 8px;
 }
 footer .contact form {
   display: flex;
@@ -212,6 +243,7 @@ footer .contact form textarea {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #ccc;
+  resize: none;
 }
 footer .contact form button {
   border: none;
@@ -220,6 +252,7 @@ footer .contact form button {
   background-color: #333;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 1em;
 }
 footer .contact form button:hover {
   background-color: #777;
