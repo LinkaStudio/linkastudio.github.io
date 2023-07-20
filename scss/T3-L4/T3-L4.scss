@@ -215,23 +215,43 @@ footer {
 
     .sn {
         grid-area: sn;
-        color: white;
+        padding: 8px;
+        margin: 8px;
+        border-bottom: 1px solid white;
+        display: flex;
+        a{
+            max-width: 64px;
+            max-height: auto;
+            padding: 8px; 
+            margin: 8px;
+            img{
+                max-width: 64px;
+                max-height: auto;
+            }
+        }
         /* Ajoutez vos styles ici */
     }
     
 
     .legal-notice {
         grid-area: legal-notice;
-
-        small {
-
-            
-            
-        }
+        
+        padding: 8px;
+        margin-left: 8px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: center;
+        align-items: flex-end;
+        
+        
     }
 
     .site-map {
         grid-area: site-map;
+        border-right: 1px solid white;
+       padding: 8px;
 
         ul {
             list-style: none;
@@ -247,6 +267,9 @@ footer {
 
     .contact {
         grid-area: contact;
+        border-left: 1px solid white;
+        padding: 8px;
+        margin-left: 8px;
 
         form {
             display: flex;
@@ -261,6 +284,7 @@ footer {
                 margin-bottom: 15px;
                 padding: 10px;
                 border: 1px solid #ccc;
+                resize: none;
             }
 
             button {
@@ -270,7 +294,7 @@ footer {
                 background-color: #333;
                 cursor: pointer;
                 transition: background-color 0.3s;
-
+                font-size: 1em;
                 &:hover {
                     background-color: #777;
                 }

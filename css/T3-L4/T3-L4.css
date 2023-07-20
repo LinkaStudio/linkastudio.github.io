@@ -183,14 +183,37 @@ footer a {
 }
 footer .sn {
   grid-area: sn;
-  color: white;
+  padding: 8px;
+  margin: 8px;
+  border-bottom: 1px solid white;
+  display: flex;
   /* Ajoutez vos styles ici */
+}
+footer .sn a {
+  max-width: 64px;
+  max-height: auto;
+  padding: 8px;
+  margin: 8px;
+}
+footer .sn a img {
+  max-width: 64px;
+  max-height: auto;
 }
 footer .legal-notice {
   grid-area: legal-notice;
+  padding: 8px;
+  margin-left: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: flex-end;
 }
 footer .site-map {
   grid-area: site-map;
+  border-right: 1px solid white;
+  padding: 8px;
 }
 footer .site-map ul {
   list-style: none;
@@ -201,6 +224,9 @@ footer .site-map ul li {
 }
 footer .contact {
   grid-area: contact;
+  border-left: 1px solid white;
+  padding: 8px;
+  margin-left: 8px;
 }
 footer .contact form {
   display: flex;
@@ -214,6 +240,7 @@ footer .contact form textarea {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #ccc;
+  resize: none;
 }
 footer .contact form button {
   border: none;
@@ -222,6 +249,7 @@ footer .contact form button {
   background-color: #333;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 1em;
 }
 footer .contact form button:hover {
   background-color: #777;
