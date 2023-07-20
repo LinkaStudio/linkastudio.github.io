@@ -4,28 +4,29 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="fr">
-
 <head>
     <!-- Metas -->
-    <meta name="description" content="Défiez le sombre voile de la réalité et des rêves dans un combat contre la douleur et le sommeil. Trouvez votre chemin à travers les mystères d'un hôpital où chaque nuit peut être la dernière. Resterez-vous en enfer ou vous échapperez-vous?">
+    <meta name="description" content="Scroll trough our library, we post in-game and development screenshots !">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     <!-- Links -->
     <link rel="stylesheet" href="/css/T3-L4.css">
     <link rel="stylesheet" href="/css/media_queries_l3t4.css">
+    <link rel="stylesheet" href="/css/galery_l3t4.css">
     <link rel="icon" type="image/x-icon" href="/res/T3-L4/media/img/icon/T3-L432.ico">
     <link http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="alternate" hreflang="en" href="http://linka-studio.com/games/T3-L4" />
+    <link rel="alternate" hreflang="en" href="http://linka-studio.com/games/T3-L4/galerie.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Open+Sans&display=swap"
+        rel="stylesheet">
 
     <!-- Javascript -->
+    <!-- <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script> -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-07DZT0TDRY"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -34,50 +35,15 @@
 
         gtag('config', 'G-07DZT0TDRY');
     </script>
-    <script>
-        function resizeIframe(obj) {
-            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 8 + 'px';
-        }
-    </script>
+
 
     <!-- Misc -->
-    <title>T3-L4</title>
+    <title>T3-L4 - Galery</title>
 
 </head>
 
 <body>
-    <dialog legal-age-modal class="modal">
-        <div class="modal-content-wrapper">
-            <img src="/res/T3-L4/media/img/logo/logo.png" alt="Logo T3-L4" id="legal-age-modal-logo" loading="lazy"/>
-            <p>
-                T3-L4 n'est pas un jeu destiné à tous les publics. Pour y jouer, vous devez être âgé(e) de 18 ans ou
-                plus.
-                Veuillez confirmer que vous avez l'âge requis pour accéder à ce site.<br />
-                De surcroît, ce jeu traite de sujets sensibles tels que :
-            <ul>
-                <li>Le suicide</li>
-                <li>La dépression</li>
-                <li>La nudité</li>
-                <li>Le sexe</li>
-                <li>Le viol</li>
-                <li>L'abus d'alcool et de drogues</li>
-                <li>Le meurtre</li>
-                <li>Les environnements médicaux</li>
-                <li>La violence</li>
-                <li>La torture</li>
-            </ul>
-            Si l'un de ces thèmes vous met mal à l'aise, nous vous conseillons vivement de quitter ce site et de ne pas
-            jouer à ce jeu.
-            <br />
-            <br />
-            Merci de votre compréhension.
-            </p>
-        </div>
-        <div class="modal-btn-wrapper">
-            <button modal-yes-btn>Oui</button>
-            <button modal-no-btn>Non</button>
-        </div>
-    </dialog>
+
     <header>
         <nav>
             <a href="index.html" title="Accueil">ACCUEIL</a>
@@ -89,41 +55,32 @@
         </nav>
         <div id="header-wrapper">
             <div id="header-img-wrapper">
-                <img src="/res/T3-L4/media/img/logo/animated.gif" alt="Logo animé T3-L4" id="header-logo" loading="lazy" />
-                <h1>Survivrez-vous la semaine?</h1>
-                <h2>Disponible prochainement</h2>
+                <img src="/res/T3-L4/media/img/logo/animated.gif" alt="T3-L4 logo animated" id="header-logo"
+                    loading="lazy" />
             </div>
         </div>
     </header>
     <main class="centered">
-        <!--About section-->
-        <section id="about-wrap">
-            <article id="elevator-speech">
-                <h2>Défiez le sombre voile de la réalité et des rêves dans un combat contre la douleur et le sommeil. Trouvez votre chemin à travers les mystères d'un hôpital où chaque nuit peut être la dernière. Resterez-vous en enfer ou vous échapperez-vous?</h2>
-            </article>
+        <h1>Galerie</h1>
+        <hr/>
+        <dialog id="modal-preview">
+            <div id="modal-content">
+                <img id="modal-image">
+                <h2 id="modal-title"></h2>
+                <span id="modal-close">X</span>
+            </div>
+        </dialog>
+        <section id="container">
+
         </section>
-        <!-- <hr/>
-                <section id="buy-game-wrap">
-                    <div id="carousel-wrap">
-                        <div id="carousel-nav">
-                            <a href="" title="Steam store"><img src="" width="64" height="64" alt="Steam logo"/></a>
-                            <a href="" title="Itch.io store"><img src="" width="64" height="64" alt="Itch.io logo"/></a>
-                            <a href="" title="Epic games store"><img src="" width="64" height="64" alt="Epic games store logo"/></a>
-                        </div>
-                    </div>
-                </section> -->
-        <hr />
-        <!--Trailer section-->
-        <iframe src="http://127.0.0.1:5500/res/T3-L4/require/_trailer.html"  name="Trailer iFrame"  onload="resizeIframe(this)" id="trailer-ifram"></iframe>
-        <hr />
     </main>
     <footer>
 
         <div class="legal-notice">
             <small>
-                <button legal-age-btn>Notice age légal</button>
+                
                 <a href="/privacy_policy.html" title="Politique de confidentialité">Politique de confidentialité</a>
-                <a href="/games/T3-L4/" title="English version">English</a>
+                <a href="/games/T3-L4/galery.html" title="English version">English</a>
                 <p>© 2023 Linka</p>
             </small>
         </div>
@@ -139,7 +96,7 @@
         </div>
         <div class="contact">
             <form action="mailto:contact@linka-studio.com" method="post" enctype="text/plain">
-                <label for="name">Nom:</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
 
                 <label for="email">Email:</label>
@@ -148,12 +105,12 @@
                 <label for="msg">Message:</label>
                 <textarea id="msg" name="msg"></textarea>
 
-                <button type="submit">Envoyer</button>
+                <button type="submit">Send</button>
             </form>
         </div>
         <div class="sn">
             <a href="https://twitter.com/LinkaStudioOff" title="Twitter"><img src="/res/media/img/icon/sn/Twitter.svg"
-                    alt="Twitter logo" width="64px" height="64px" /></a>
+                    alt="Twitter logo" width="64px" height="64px"/></a>
             <a href="https://www.instagram.com/linka.studio.off/" title="Instagram"><img
                     src="/res/media/img/icon/sn/Instagram.svg" alt="Instagram logo" width="64px" height="64px"/></a>
             <a href="https://www.youtube.com/@LinkaStudioOff" title="Youtube"><img
@@ -170,29 +127,7 @@
                             src="/res/T3-L4/media/img/icon/sn/discord.svg" alt="Discord logo" /></a> -->
         </div>
     </footer>
-    <script>
-
-        const legalAgeBtn = document.querySelector("[legal-age-btn]")
-        const modalDenyBtn = document.querySelector("[modal-no-btn]");
-        const modalAgreeBtn = document.querySelector("[modal-yes-btn]");
-        const ageWarningModal = document.querySelector("[legal-age-modal]");
-
-        legalAgeBtn.addEventListener("click", () => {
-            ageWarningModal.showModal();
-        });
-        modalDenyBtn.addEventListener("click", () => {
-            //window.location.href = "https://linka-studio.com/fr/";
-            window.location.href = "about:blank";
-        });
-
-        modalAgreeBtn.addEventListener("click", () => {
-            ageWarningModal.close();
-        });
-
-        window.onload = function () {
-            ageWarningModal.showModal();
-        };
-    </script>
+    <script src="/js/galery_l3t4.js" type="text/javascript" async></script>
 </body>
 
 </html>

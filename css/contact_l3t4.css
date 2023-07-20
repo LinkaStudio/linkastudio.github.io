@@ -1,0 +1,18 @@
+header {
+  height: 75vh;
+  background-position: bottom;
+  margin-bottom: 8px;
+}
+
+main {
+  display: block;
+  width: 100%;
+  margin: 8px auto;
+}
+main section {
+  background-color: #16161d;
+  width: 70%;
+  margin: 16px auto;
+  padding: 8px 16px;
+  border-radius: 8px;
+}

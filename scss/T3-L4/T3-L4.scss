@@ -20,10 +20,19 @@ h5,
 h6 {
     font-family: $font-title;
     font-weight: 400;
+    margin: 16px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.7em;
 }
 
 hr {
-    width: 70%;
+    width: 35%;
     color: #16161D;
     border: 1px solid #16161D;
     background-color: #16161D;
@@ -95,7 +104,7 @@ header {
     }
 }
 
-.modal {
+dialog {
     width: 80%;
     padding: 32px 64px;
     background-color: $dark-blue_bgcolor;
@@ -150,6 +159,14 @@ header {
     }
 }
 
+
+#trailer-ifram{
+    width: 50%;
+    border: none;
+    margin: 16px auto;
+    
+}
+
 #trailer-wrap {
     //position: relative;
 
@@ -193,6 +210,28 @@ header {
     }
 }
 
+.sn-grid{
+    grid-area: sn;
+        padding: 8px;
+        margin: 8px;
+        border-bottom: 1px solid white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        a {
+            max-width: 64px;
+            max-height: auto;
+            padding: 8px;
+            margin: 8px;
+
+            img {
+                max-width: 64px;
+                max-height: auto;
+            }
+        }
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -206,7 +245,8 @@ footer {
     padding: 20px;
     background-color: black;
     color: #f5f5f5;
-    align-items:end;
+    align-items: end;
+    border-top: 1px solid white;
 
     a {
         border: none;
@@ -222,40 +262,44 @@ footer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        a{
+
+        a {
             max-width: 64px;
             max-height: auto;
-            padding: 8px; 
+            padding: 8px;
             margin: 8px;
-            img{
+
+            img {
                 max-width: 64px;
                 max-height: auto;
             }
         }
+
         /* Ajoutez vos styles ici */
     }
-    
+
 
     .legal-notice {
-        
+
         grid-area: legal-notice;
-        
+
         padding: 8px;
         margin-left: 8px;
-        small{
+
+        small {
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             align-items: center;
         }
-        
-        
+
+
     }
 
     .site-map {
         grid-area: site-map;
         border-right: 1px solid white;
-       padding: 8px;
+        padding: 8px;
 
         ul {
             list-style: none;
@@ -264,7 +308,7 @@ footer {
             li {
                 margin-bottom: 10px;
 
-                
+
             }
         }
     }
@@ -274,6 +318,7 @@ footer {
         border-left: 1px solid white;
         padding: 8px;
         margin-left: 8px;
+
 
         form {
             display: flex;
@@ -299,6 +344,7 @@ footer {
                 cursor: pointer;
                 transition: background-color 0.3s;
                 font-size: 1em;
+
                 &:hover {
                     background-color: #777;
                 }

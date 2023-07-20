@@ -1,0 +1,52 @@
+header {
+  height: 75vh;
+  background-position: bottom;
+  margin-bottom: 8px;
+}
+
+#container {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+#container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#container div img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#container div p {
+  margin-top: 10px;
+}
+
+#modal-preview #modal-content {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+#modal-preview #modal-content img {
+  width: 90%;
+  margin: auto;
+}
+#modal-preview #modal-content #modal-title {
+  width: 100%;
+  margin-top: 10px auto;
+  text-align: center;
+}
+#modal-preview #modal-content #modal-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
+}
