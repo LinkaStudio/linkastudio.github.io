@@ -40,6 +40,7 @@
         function resizeIframe(obj) {
             obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 8 + 'px';
         }
+        
     </script>
 
 
@@ -120,7 +121,7 @@
             </section> -->
         <hr />
         <!--Trailer section-->
-        <iframe src="http://127.0.0.1:5500/res/T3-L4/require/_trailer.html"  name="Trailer iFrame"  onload="resizeIframe(this)" id="trailer-ifram"></iframe>
+        <iframe src="http://127.0.0.1:5500/res/T3-L4/require/_trailer.html"  name="Trailer iFrame"  onload="resizeIframe(this)" onresize="resizeIframe(this)" id="trailer-ifram"></iframe>
         <hr />
     </main>
     <footer>
