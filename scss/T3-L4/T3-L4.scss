@@ -157,7 +157,7 @@ dialog {
         margin: auto;
         text-align: center;
     }
-}
+} 
 
 
 #trailer-ifram {
@@ -176,7 +176,8 @@ dialog {
     text-align: center;
     display: flex;
     min-height: 70vh;
-    //align-items: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
 
     #trailer-canva {
