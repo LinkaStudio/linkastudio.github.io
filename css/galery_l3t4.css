@@ -24,7 +24,20 @@ header {
 #container div p {
   margin-top: 10px;
 }
+#container div iframe {
+  width: 100%;
+  height: auto;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
 
+#modal-preview #modal-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
+}
 #modal-preview #modal-content {
   display: flex;
   width: 100%;
@@ -44,9 +57,10 @@ header {
   margin-top: 10px auto;
   text-align: center;
 }
-#modal-preview #modal-content #modal-close {
-  position: absolute;
-  right: 16px;
-  top: 16px;
-  cursor: pointer;
+#modal-preview #modal-content iframe {
+  width: 100%;
+  height: auto;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
 }

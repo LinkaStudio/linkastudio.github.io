@@ -27,11 +27,26 @@ header {
         p {
             margin-top: 10px;
         }
+
+        iframe {
+            width: 100%;
+            height: auto;  // specify height
+            height: 0;
+            padding-bottom: 56.25%;  // 16:9 aspect ratio
+            position: relative;
+        }
     }
 }
 
 #modal-preview {
 
+    
+    #modal-close {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        cursor: pointer;
+    }
 
     #modal-content {
 
@@ -55,11 +70,14 @@ header {
             text-align: center;
         }
 
-        #modal-close {
-            position: absolute;
-            right: 16px;
-            top: 16px;
-            cursor: pointer;
+
+        iframe {
+            width: 100%;
+            height: auto;  // specify height
+            height: 0;
+            padding-bottom: 56.25%;  // 16:9 aspect ratio
+            position: relative;
         }
     }
+
 }

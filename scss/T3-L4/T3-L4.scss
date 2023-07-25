@@ -160,11 +160,11 @@ dialog {
 }
 
 
-#trailer-ifram{
+#trailer-ifram {
     width: 50%;
     border: none;
     margin: 16px auto;
-    
+
 }
 
 #trailer-wrap {
@@ -175,8 +175,8 @@ dialog {
     // margin: auto;
     text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    min-height: 70vh;
+    //align-items: center;
     width: 100%;
 
     #trailer-canva {
@@ -197,6 +197,17 @@ dialog {
             background-position: center;
         }
 
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }   
+
         #trailer-video-content {
             position: absolute;
             top: 0;
@@ -210,26 +221,26 @@ dialog {
     }
 }
 
-.sn-grid{
+.sn-grid {
     grid-area: sn;
+    padding: 8px;
+    margin: 8px;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    a {
+        max-width: 64px;
+        max-height: auto;
         padding: 8px;
         margin: 8px;
-        border-bottom: 1px solid white;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
 
-        a {
+        img {
             max-width: 64px;
             max-height: auto;
-            padding: 8px;
-            margin: 8px;
-
-            img {
-                max-width: 64px;
-                max-height: auto;
-            }
         }
+    }
 }
 
 footer {

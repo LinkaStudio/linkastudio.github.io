@@ -1,3 +1,4 @@
 [
-    {"src": "background_finalv1.webp", "title": "Your room"}
+    {"type": "image", "src": "background_finalv1.webp", "title": "Your room"},
+    {"type": "video", "src": "https://www.youtube.com/embed/CcwdYX9sgR0", "title": "Trailer #1"}
 ]
