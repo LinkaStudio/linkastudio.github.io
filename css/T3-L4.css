@@ -33,6 +33,7 @@ hr {
   color: #16161D;
   border: 1px solid #16161D;
   background-color: #16161D;
+  margin: 8px auto;
 }
 
 .centered {
@@ -40,6 +41,19 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#learn-more {
+  color: white;
+  margin-top: 21px;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+  justify-content: space-around;
 }
 
 header {
