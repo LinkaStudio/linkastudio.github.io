@@ -1,0 +1,27 @@
+main {
+  display: block;
+  width: 100%;
+  margin: 8px auto;
+}
+main section {
+  width: 70%;
+  margin: 16px auto;
+}
+main section article {
+  width: 100%;
+  margin: 32px auto;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #16161d;
+}
+main section article h2,
+main section article h3 {
+  margin: 32px 0 16px 0;
+}
+main section article p {
+  text-indent: 1em;
+  line-height: 1.5em;
+}
+main section #elevator-speech {
+  text-align: center;
+}
