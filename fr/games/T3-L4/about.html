@@ -53,6 +53,40 @@
 
 </head>
 <body>
+    <!--Legal notice dialog START-->
+    <dialog legal-age-modal class="modal">
+        <div class="modal-content-wrapper">
+            <img src="/res/T3-L4/media/img/logo/logo.png" alt="Logo T3-L4" id="legal-age-modal-logo" loading="lazy"/>
+            <p>
+                T3-L4 n'est pas un jeu destiné à tous les publics. Pour y jouer, vous devez être âgé(e) de 18 ans ou
+                plus.
+                Veuillez confirmer que vous avez l'âge requis pour accéder à ce site.<br />
+                De surcroît, ce jeu traite de sujets sensibles tels que :
+            <ul>
+                <li>Le suicide</li>
+                <li>La dépression</li>
+                <li>La nudité</li>
+                <li>Le sexe</li>
+                <li>Le viol</li>
+                <li>L'abus d'alcool et de drogues</li>
+                <li>Le meurtre</li>
+                <li>Les environnements médicaux</li>
+                <li>La violence</li>
+                <li>La torture</li>
+            </ul>
+            Si l'un de ces thèmes vous met mal à l'aise, nous vous conseillons vivement de quitter ce site et de ne pas
+            jouer à ce jeu.
+            <br />
+            <br />
+            Merci de votre compréhension.
+            </p>
+        </div>
+        <div class="modal-btn-wrapper">
+            <button modal-yes-btn>Oui</button>
+            <button modal-no-btn>Non</button>
+        </div>
+    </dialog>
+    <!--Legal notice dialog END-->
     <header>
         <nav>
             <a href="index.html" title="Accueil">ACCUEIL</a>
@@ -103,7 +137,7 @@
 
         <div class="legal-notice">
             <small>
-                
+                <button legal-age-btn>Notice age légal</button>
                 <a href="/privacy_policy.html" title="Politique de confidentialité">Politique de confidentialité</a>
                 <a href="/games/T3-L4/about.html" title="English version">English</a>
                 <p>© 2023 Linka</p>
@@ -152,6 +186,7 @@
                             src="/res/T3-L4/media/img/icon/sn/discord.svg" alt="Discord logo" /></a> -->
         </div>
     </footer>
+    <script src="/js/T3-L4/legal_notice.js" async></script>
 </body>
 
 </html>

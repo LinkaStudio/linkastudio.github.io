@@ -1,16 +1,60 @@
 @media only screen and (max-width: 850px) {
-    nav{
-        width: 100%!important;
+    nav {
+        width: 100% !important;
     }
-    footer{
-        .sn{
-           
+
+    footer {
+        .sn {
+
             justify-content: space-around;
             align-items: baseline;
             align-content: stretch;
-            img{
+
+            img {
                 width: 32px;
-                
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    * {
+        font-size: 90%;
+    }
+
+    section{
+        width: 100%;
+        margin: auto;
+
+        article{
+            width: 90%;
+            margin: auto;
+        }
+
+        iframe{
+            width: 100%;
+            margin: auto;
+        }
+    }
+
+    footer{
+        display: block;
+        .site-map{
+            text-align:center;
+            border: none;
+        }
+        .contact{
+            border:none;
+        }
+        .legal-notice{
+            margin: 0;
+        }
+        .sn{
+            a{
+                padding: 0;
+                margin: 0;
+                max-width: 32px;
             }
         }
     }

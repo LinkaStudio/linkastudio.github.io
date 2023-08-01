@@ -61,6 +61,7 @@
 </head>
 
 <body>
+    <!--Legal age notice dialog START-->
     <dialog legal-age-modal class="modal">
         <div class="modal-content-wrapper">
             <img src="/res/T3-L4/media/img/logo/logo.png" alt="T3-L4 logo" id="legal-age-modal-logo" loading="lazy"/>
@@ -93,6 +94,7 @@
             <button modal-no-btn>No</button>
         </div>
     </dialog>
+    <!--Legal age notice dialog END-->
     <header>
         <nav>
             <a href="index.html" title="Home">HOME</a>
@@ -188,27 +190,7 @@
                             src="/res/T3-L4/media/img/icon/sn/discord.svg" alt="Discord logo" /></a> -->
         </div>
     </footer>
-    <script>
-        const legalAgeBtn = document.querySelector("[legal-age-btn]")
-        const modalDenyBtn = document.querySelector("[modal-no-btn]");
-        const modalAgreeBtn = document.querySelector("[modal-yes-btn]");
-        const ageWarningModal = document.querySelector("[legal-age-modal]");
-
-        legalAgeBtn.addEventListener("click", () => {
-            ageWarningModal.showModal();
-        });
-        modalDenyBtn.addEventListener("click", () => {
-            //window.location.href = "https://linka-studio.com";
-            window.location.href = "about:blank";
-        });
-
-        modalAgreeBtn.addEventListener("click", () => {
-            ageWarningModal.close();
-        });
-        window.onload = function () {
-            ageWarningModal.showModal();
-        };
-    </script>
+    <script src="/js/T3-L4/legal_notice.js" async></script>
 </body>
 
 </html>
