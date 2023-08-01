@@ -52,6 +52,40 @@
 
 </head>
 <body>
+    <!--Legal age notice dialog START-->
+    <dialog legal-age-modal class="modal">
+        <div class="modal-content-wrapper">
+            <img src="/res/T3-L4/media/img/logo/logo.png" alt="T3-L4 logo" id="legal-age-modal-logo" loading="lazy"/>
+            <p>
+                T3-L4 is not a game intended for all audiences. To play, you must be 18 years of age or older.
+                Please confirm that you are of the required age to access this site.<br />
+                Furthermore, this game deals with sensitive subjects such as:
+            <ul>
+                <li>Suicide</li>
+                <li>Depression</li>
+                <li>Nudity</li>
+                <li>Sex</li>
+                <li>Rape</li>
+                <li>Alcohol and drug abuse</li>
+                <li>Murder</li>
+                <li>Medical settings</li>
+                <li>Violence</li>
+                <li>Torture</li>
+            </ul>
+            If any of these themes make you uncomfortable, we strongly recommend that you leave this site and refrain
+            from playing this game.
+            <br />
+            <br />
+            Thank you for your understanding.
+            </p>
+
+        </div>
+        <div class="modal-btn-wrapper">
+            <button modal-yes-btn>Yes</button>
+            <button modal-no-btn>No</button>
+        </div>
+    </dialog>
+    <!--Legal age notice dialog END-->
     <header>
         <nav>
             <a href="index.html" title="Home">HOME</a>
@@ -100,7 +134,7 @@
 
         <div class="legal-notice">
             <small>
-                
+                <button legal-age-btn>Legal age notice</button>
                 <a href="/privacy_policy.html" title="Privacy Policy">Privacy Policy</a>
                 <a href="/fr/games/T3-L4/about.html" title="Version française">Français</a>
                 <p>© 2023 Linka</p>
@@ -149,6 +183,7 @@
                             src="/res/T3-L4/media/img/icon/sn/discord.svg" alt="Discord logo" /></a> -->
         </div>
     </footer>
+    <script src="/js/T3-L4/legal_notice.js" async></script>
 </body>
 
 </html>
