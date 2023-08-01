@@ -11,3 +11,38 @@
     width: 32px;
   }
 }
+@media only screen and (max-width: 500px) {
+  * {
+    font-size: 90%;
+  }
+  section {
+    width: 100%;
+    margin: auto;
+  }
+  section article {
+    width: 90%;
+    margin: auto;
+  }
+  section iframe {
+    width: 100%;
+    margin: auto;
+  }
+  footer {
+    display: block;
+  }
+  footer .site-map {
+    text-align: center;
+    border: none;
+  }
+  footer .contact {
+    border: none;
+  }
+  footer .legal-notice {
+    margin: 0;
+  }
+  footer .sn a {
+    padding: 0;
+    margin: 0;
+    max-width: 32px;
+  }
+}
