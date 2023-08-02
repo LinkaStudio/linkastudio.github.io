@@ -13,11 +13,11 @@ modalDenyBtn.addEventListener("click", () => {
 });
 
 modalAgreeBtn.addEventListener("click", () => {
-    localStorage.setItem("legalNotice", "true");
+    sessionStorage.setItem("legalNotice", "true");
     ageWarningModal.close();
 });
 window.onload = function () {
-    if (localStorage.getItem("legalNotice") != "true") {
+    if (sessionStorage.getItem("legalNotice") != "true") {
         ageWarningModal.showModal();
     }
 };
